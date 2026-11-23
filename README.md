@@ -9,7 +9,7 @@ Everything is published as GitHub release assets. Open the Releases page and pic
 | Release tag | Asset | What it is | Licence of the binary |
 |---|---|---|---|
 | `cam-sim-1.8.0` | `toolcrib_cam_sim-1.8.0-cp311-cp311-win_amd64.whl` | Fast CAM simulation engine (engine ABI 9) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) |
-| `cam-sim-1.4.0` | `toolcrib_cam_sim-1.4.0-cp311-cp311-win_amd64.whl` | Earlier simulation engine (ABI 4), kept for older ToolCrib builds that still pin it | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) |
+| `cam-sim-1.4.0` | `toolcrib_cam_sim-1.4.0-cp311-cp311-win_amd64.whl` | Earlier simulation engine (ABI 5), kept for older ToolCrib builds that still pin it | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) |
 | `cam-post-js-1.2.1` | `toolcrib_post_js-1.2.1-cp311-cp311-win_amd64.whl` | Sandboxed JavaScript engine for post-processor code sections | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
 
 Python 3.11, Windows x64 wheels for now. macOS and Linux builds will be added here when they exist.
