@@ -11,3 +11,4 @@ f38ead5ce684de4a4cdb3908d3f67584e6b3107aaf8a2f6f38e9973a0c0323f9 *toolcrib_post_
 09193c9560468db87c391354a3e7056302d59b7ea2c038b7c70c1116d86300a2 *toolcrib_post_js-1.2.2-cp311-cp311-macosx_11_0_arm64.whl
 fcda674e4593cd5d016bf5c91ec026ede6466ba9afd541fe9e6a5e3b4c8c48f3 *toolcrib_cam_sim-1.8.1-cp311-cp311-macosx_10_14_x86_64.whl
 3df242f6867b6868fa01e5c7c43fd971a2e5a8869b4b8666bbb555bdbaea3b82 *toolcrib_post_js-1.2.2-cp311-cp311-macosx_10_14_x86_64.whl
+eaa505b07cf1bb08236a95e0e5373f4df193adcfd01e2ecfafb913f0b9e47445 *FreeCAD_1.1.4-tc8-Windows-x86_64-py311.7z

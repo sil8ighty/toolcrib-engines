@@ -57,3 +57,25 @@ sha256sum -c SHA256SUMS.txt
 | `toolcrib_cam_sim-1.8.0-cp311-cp311-win_amd64.whl` | 199220 | `20cda636202714eaf5ad01a757698adbf16b27950346a83292a3785bc0b23faf` |
 | `toolcrib_cam_sim-1.4.0-cp311-cp311-win_amd64.whl` | 161457 | `195663c7398e6b5d1034fb773c81de427f484c1679b459db8061f70bdca90381` |
 | `toolcrib_post_js-1.2.1-cp311-cp311-win_amd64.whl` | 486533 | `ab867e1b6b83f3ba5087a6fc704dffc109c0766090eea13fa56b5f794aa7c1f7` |
+
+## FreeCAD engine runtime (Windows)
+
+| Release tag | Asset | What it is | Licence |
+|---|---|---|---|
+| `engine-1.1.4-tc8` | `FreeCAD_1.1.4-tc8-Windows-x86_64-py311.7z` | The FreeCAD 1.1.4 runtime ToolCrib CAD runs on (Windows x64, Python 3.11): the official FreeCAD 1.1.4 release with ToolCrib's engine patches 0001-0027 rebuilt into it and Coin3D 4.0.10 | FreeCAD: LGPL-2.1-or-later. Each third-party package keeps its own licence (below). |
+
+This archive is free software, not ToolCrib proprietary code. Its complete corresponding source is public:
+
+- **FreeCAD with ToolCrib's patches:** release [`engine-1.1.4-tc8`](https://github.com/sil8ighty/toolcrib-engine-source/releases/tag/engine-1.1.4-tc8) of `toolcrib-engine-source` (`FreeCAD_1.1.4-tc8-source.tar.gz`: FreeCAD 1.1.4 with patches 0001-0027 applied, the patches, and the build scripts with `BUILDING.md`). The patches and a manifest of every rebuilt file are also inside the runtime, in `doc/ToolCribEngine/`.
+- **The LGPL and GPL third-party packages inside it** (Qt 6.8.3, PySide6 6.8.3, Open CASCADE 7.8.1, SMESH, OpenCAMLib, GEOS, GLib, cairo, MPFR, GMP, CalculiX 2.22, Gmsh 4.15.0, the GCC runtime and the rest): the upstream source archive of each exact version plus the conda-forge recipe that built it, in releases [`thirdparty-win-beta-2026-11`](https://github.com/sil8ighty/toolcrib-engine-source/releases/tag/thirdparty-win-beta-2026-11) and [`thirdparty-win-tc8-delta`](https://github.com/sil8ighty/toolcrib-engine-source/releases/tag/thirdparty-win-tc8-delta) (Graphviz, getopt-win32, Eigen, FreeImage, backports.zstd). Each release lists its files in `SHA256SUMS.txt`.
+- **Notices:** [`notices/engine-tc8/`](notices/engine-tc8/): the licence files of every package in the runtime (`NOTICES-INDEX.md`), with the GPL-2.0, GPL-3.0, LGPL-2.1 and LGPL-3.0 texts.
+
+CalculiX (`bin/ccx.exe`) and Gmsh (`bin/gmsh.exe`, `bin/gmsh.dll`) are separate GPL-2.0-or-later programs inside the runtime; ToolCrib runs them as their own processes. Their complete corresponding source code (and that of every other LGPL and GPL part) is published at no charge next to this runtime, in the source releases linked above.
+
+Left out of this runtime (they are in the official FreeCAD release): FFmpeg with x264 and x265, and IfcOpenShell with its CGAL parts. FreeCAD's BIM IFC import and export therefore do not work in it.
+
+You may modify the engine, rebuild it and replace the runtime, or any library in it, with your own build (`BUILDING.md` in the source archive).
+
+| Asset | Size (bytes) | SHA-256 |
+|---|---|---|
+| `FreeCAD_1.1.4-tc8-Windows-x86_64-py311.7z` | 401024253 | `eaa505b07cf1bb08236a95e0e5373f4df193adcfd01e2ecfafb913f0b9e47445` |
