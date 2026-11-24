@@ -8,13 +8,21 @@ Everything is published as GitHub release assets. Open the Releases page and pic
 
 | Release tag | Asset | What it is | Licence of the binary |
 |---|---|---|---|
+| `cam-post-js-1.2.2` | `toolcrib_post_js-1.2.2-cp311-cp311-macosx_10_14_x86_64.whl` | Sandboxed JavaScript engine for post-processor code sections; its memory cap is counted the same on every computer (macOS Intel) | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
+| `cam-sim-1.8.1` | `toolcrib_cam_sim-1.8.1-cp311-cp311-macosx_10_14_x86_64.whl` | Fast CAM simulation engine (engine ABI 9) with its own portable maths: the same stock to the last bit on every computer (macOS Intel) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) and fdlibm maths (Sun, permissive notice) |
+| `cam-post-js-1.2.2` | `toolcrib_post_js-1.2.2-cp311-cp311-macosx_11_0_arm64.whl` | Sandboxed JavaScript engine for post-processor code sections; its memory cap is counted the same on every computer (macOS Apple silicon) | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
+| `cam-sim-1.8.1` | `toolcrib_cam_sim-1.8.1-cp311-cp311-macosx_11_0_arm64.whl` | Fast CAM simulation engine (engine ABI 9) with its own portable maths: the same stock to the last bit on every computer (macOS Apple silicon) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) and fdlibm maths (Sun, permissive notice) |
+| `cam-post-js-1.2.2` | `toolcrib_post_js-1.2.2-cp311-cp311-manylinux_2_28_aarch64.whl` | Sandboxed JavaScript engine for post-processor code sections; its memory cap is counted the same on every computer (Linux ARM64) | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
+| `cam-sim-1.8.1` | `toolcrib_cam_sim-1.8.1-cp311-cp311-manylinux_2_28_aarch64.whl` | Fast CAM simulation engine (engine ABI 9) with its own portable maths: the same stock to the last bit on every computer (Linux ARM64) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) and fdlibm maths (Sun, permissive notice) |
+| `cam-post-js-1.2.2` | `toolcrib_post_js-1.2.2-cp311-cp311-manylinux_2_28_x86_64.whl` | Sandboxed JavaScript engine for post-processor code sections; its memory cap is counted the same on every computer (Linux x86_64) | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
+| `cam-sim-1.8.1` | `toolcrib_cam_sim-1.8.1-cp311-cp311-manylinux_2_28_x86_64.whl` | Fast CAM simulation engine (engine ABI 9) with its own portable maths: the same stock to the last bit on every computer (Linux x86_64) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) and fdlibm maths (Sun, permissive notice) |
 | `cam-post-js-1.2.2` | `toolcrib_post_js-1.2.2-cp311-cp311-win_amd64.whl` | Sandboxed JavaScript engine for post-processor code sections; its memory cap is counted the same on every computer (Windows x64) | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
 | `cam-sim-1.8.1` | `toolcrib_cam_sim-1.8.1-cp311-cp311-win_amd64.whl` | Fast CAM simulation engine (engine ABI 9) with its own portable maths: the same stock to the last bit on every computer (Windows x64) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) and fdlibm maths (Sun, permissive notice) |
 | `cam-sim-1.8.0` | `toolcrib_cam_sim-1.8.0-cp311-cp311-win_amd64.whl` | Fast CAM simulation engine (engine ABI 9) | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) |
 | `cam-sim-1.4.0` | `toolcrib_cam_sim-1.4.0-cp311-cp311-win_amd64.whl` | Earlier simulation engine (ABI 5), kept for older ToolCrib builds that still pin it | ToolCrib proprietary; includes pybind11 (BSD-3-Clause) |
 | `cam-post-js-1.2.1` | `toolcrib_post_js-1.2.1-cp311-cp311-win_amd64.whl` | Sandboxed JavaScript engine for post-processor code sections | ToolCrib proprietary binding; includes QuickJS-NG 0.18.0 (MIT) |
 
-Python 3.11, Windows x64 wheels for now. macOS and Linux builds will be added here when they exist.
+Python 3.11 wheels. From the cam-sim-1.8.1 and cam-post-js-1.2.2 tags: Windows x64, macOS (Apple silicon, macOS 11 or later; Intel, macOS 10.14 or later) and Linux (x86_64 and ARM64, manylinux_2_28). Each platform build gives the same stock and the same posted files as Windows, bit for bit (checked by ToolCrib before every release). Earlier tags are Windows x64 only.
 
 ## Licences
 
@@ -36,6 +44,14 @@ sha256sum -c SHA256SUMS.txt
 
 | Asset | Size (bytes) | SHA-256 |
 |---|---|---|
+| `toolcrib_post_js-1.2.2-cp311-cp311-macosx_10_14_x86_64.whl` | 428620 | `3df242f6867b6868fa01e5c7c43fd971a2e5a8869b4b8666bbb555bdbaea3b82` |
+| `toolcrib_cam_sim-1.8.1-cp311-cp311-macosx_10_14_x86_64.whl` | 213223 | `fcda674e4593cd5d016bf5c91ec026ede6466ba9afd541fe9e6a5e3b4c8c48f3` |
+| `toolcrib_post_js-1.2.2-cp311-cp311-macosx_11_0_arm64.whl` | 389952 | `09193c9560468db87c391354a3e7056302d59b7ea2c038b7c70c1116d86300a2` |
+| `toolcrib_cam_sim-1.8.1-cp311-cp311-macosx_11_0_arm64.whl` | 191586 | `3e94ad115868ac2b35f216b689a0fdc12aa78dab364adc84473d92ef4feaaee8` |
+| `toolcrib_post_js-1.2.2-cp311-cp311-manylinux_2_28_aarch64.whl` | 510996 | `f38ead5ce684de4a4cdb3908d3f67584e6b3107aaf8a2f6f38e9973a0c0323f9` |
+| `toolcrib_cam_sim-1.8.1-cp311-cp311-manylinux_2_28_aarch64.whl` | 217612 | `44bb508e2d5e4b5cf459a5282994198bf70d9c25686918be4bd8595130cad2fb` |
+| `toolcrib_post_js-1.2.2-cp311-cp311-manylinux_2_28_x86_64.whl` | 540436 | `8a8098f98d389bd128ba4d35809751e08fe265df91d8baf7fc18cd0a9c7af865` |
+| `toolcrib_cam_sim-1.8.1-cp311-cp311-manylinux_2_28_x86_64.whl` | 234035 | `c269404d7d3d33836ee921c4797a4a8d7d747883270dec8a39f81b42f380fae9` |
 | `toolcrib_post_js-1.2.2-cp311-cp311-win_amd64.whl` | 486632 | `5dd3456f6dea3817043df5c75dce05db5f1e87c8acf7cf2e069a76bd0701c96f` |
 | `toolcrib_cam_sim-1.8.1-cp311-cp311-win_amd64.whl` | 204792 | `0560fb9ace528e56e7a8a0788b1ff6efd459c953abcd6b137a4dacce451707cc` |
 | `toolcrib_cam_sim-1.8.0-cp311-cp311-win_amd64.whl` | 199220 | `20cda636202714eaf5ad01a757698adbf16b27950346a83292a3785bc0b23faf` |
